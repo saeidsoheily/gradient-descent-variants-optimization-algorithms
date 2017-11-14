@@ -3,9 +3,13 @@ The gradient descent variants optimization algorithms that are widely used by th
 
 
 Momentum:
+--------
+
 SGD has trouble navigating the surface curves much more steeply in one dimension than in another [Sut86], which are common around the local optima.
 Momentum [Qia99] is a method that helps accelerate SGD in the relevant direction and dampens oscillations by adding a fraction γ of the update vector of the past time step to the current update vector, as:
+
 θ = θ − νt , with  νt = γ νt−1  +  η ∇θ J(θ)
+
 The momentum parameter γ is usually set to 0.9 or a similar value. As a result, we gain faster convergence and reduced oscillation.
 
 
